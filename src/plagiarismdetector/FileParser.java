@@ -6,8 +6,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ *	FileParser is a helper class used to read a file and convert the 
+ *	words in the file to an ArrayList of the words in it
+ */
 public class FileParser {
 	
+	/**
+	 * 	reader is a function that takes in a filename (must be in the root dir)
+	 * 	and returns an ArrayList of every word present in the file
+	 */
 	public static ArrayList<String> reader(String filename){
 		BufferedReader reader = null;
 		ArrayList<String> filewords = new ArrayList<>();
